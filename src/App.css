@@ -1,0 +1,715 @@
+.shell {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.script {
+  display: block;
+  font-family: var(--script);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.nav {
+  background: var(--teal);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+
+.brand {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 34px;
+}
+
+.nav-links a {
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.88);
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--gold-soft);
+}
+
+.hero {
+  position: relative;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  padding: 84px 0;
+  overflow: hidden;
+  background-image:
+    linear-gradient(rgba(20, 40, 44, 0.05), rgba(20, 40, 44, 0.32)),
+    url('./assets/hero-spices.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-card {
+  position: relative;
+  width: min(620px, 100%);
+  margin: 0 auto;
+  padding: 56px 48px 62px;
+  text-align: center;
+  background: linear-gradient(
+    115deg,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.58) 42%,
+    rgba(255, 255, 255, 0.88)
+  );
+  backdrop-filter: blur(1.5px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.16);
+}
+
+.hero-card .script {
+  position: relative;
+  z-index: 1;
+  color: #2b3a3e;
+  font-size: clamp(42px, 5vw, 60px);
+}
+
+.hero-card h1 {
+  position: relative;
+  z-index: 1;
+  margin-top: 8px;
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: clamp(28px, 4.4vw, 50px);
+  line-height: 1.15;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.read-more {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin-top: 26px;
+  padding-bottom: 3px;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #33444a;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.read-more:hover {
+  border-color: #33444a;
+}
+
+.ring {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.ring-a {
+  width: 300px;
+  height: 300px;
+  top: 50%;
+  right: -70px;
+  transform: translateY(-50%);
+}
+
+.ring-b {
+  width: 360px;
+  height: 360px;
+  left: 18%;
+  bottom: -160px;
+}
+
+.flavour {
+  background: var(--teal);
+  padding: 88px 0;
+}
+
+.flavour-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 430px;
+  gap: 90px;
+  align-items: center;
+}
+
+.flavour-copy {
+  max-width: 470px;
+}
+
+.flavour h2 {
+  font-size: 19px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.flavour p {
+  margin-top: 20px;
+  font-size: 13.5px;
+  line-height: 2;
+  color: var(--muted);
+}
+
+.flavour-photo {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.features {
+  background: var(--gray);
+  color: var(--ink);
+  padding: 74px 0 80px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
+}
+
+.dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dots span {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--teal);
+}
+
+.features .dots {
+  margin-bottom: 18px;
+}
+
+.features h3 {
+  font-size: 13.5px;
+  font-weight: 700;
+}
+
+.features p {
+  margin-top: 14px;
+  max-width: 300px;
+  font-size: 12.5px;
+  line-height: 1.9;
+  color: #5d696d;
+}
+
+.plate {
+  background-image:
+    linear-gradient(rgba(20, 40, 44, 0.15), rgba(20, 40, 44, 0.28)),
+    url('./assets/hero-spices.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 92px 0;
+}
+
+.plate-panel {
+  background: rgba(244, 246, 245, 0.87);
+  backdrop-filter: blur(3px);
+  padding: 52px 60px 64px;
+}
+
+.plate-head {
+  text-align: center;
+}
+
+.plate-head .script {
+  color: var(--gold);
+  font-size: clamp(34px, 3.4vw, 44px);
+}
+
+.plate-head h2 {
+  margin-top: 2px;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(24px, 2.6vw, 32px);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.plate-grid {
+  margin-top: 44px;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr 1.05fr 0.95fr;
+  gap: 22px;
+}
+
+.plate-grid img {
+  width: 100%;
+  height: 100%;
+  min-height: 260px;
+  object-fit: cover;
+}
+
+.plate-note {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 34px 28px;
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.plate-note h3 {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.plate-note p {
+  margin-top: 14px;
+  font-size: 12.5px;
+  line-height: 1.9;
+  color: var(--body);
+}
+
+.plate-note a {
+  align-self: flex-start;
+  margin-top: 20px;
+  padding-bottom: 2px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--ink);
+  border-bottom: 1px solid var(--ink);
+}
+
+.strip {
+  padding: 56px 0 48px;
+  overflow: hidden;
+  background-color: var(--gray-light);
+  background-image:
+    radial-gradient(circle at 4% 50%, transparent 52px, rgba(255, 255, 255, 0.65) 53px 54px, transparent 55px),
+    radial-gradient(circle at 4% 50%, transparent 74px, rgba(255, 255, 255, 0.5) 75px 76px, transparent 77px),
+    radial-gradient(circle at 96% 50%, transparent 52px, rgba(255, 255, 255, 0.65) 53px 54px, transparent 55px),
+    radial-gradient(circle at 96% 50%, transparent 74px, rgba(255, 255, 255, 0.5) 75px 76px, transparent 77px);
+  color: var(--ink);
+}
+
+.strip-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.strip h2 {
+  font-size: 14.5px;
+  font-weight: 700;
+}
+
+.strip p {
+  margin-top: 14px;
+  max-width: 540px;
+  font-size: 12.5px;
+  line-height: 1.95;
+  color: #5d696d;
+}
+
+.strip .dots {
+  margin-top: 22px;
+}
+
+.strip-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 34px;
+  margin-top: 20px;
+}
+
+.strip-links a {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #3c4d52;
+}
+
+.strip-links a:hover {
+  color: var(--gold);
+}
+
+.menu {
+  padding: 88px 0;
+  background-image:
+    linear-gradient(rgba(20, 40, 44, 0.15), rgba(20, 40, 44, 0.3)),
+    url('./assets/hero-spices.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.menu-panel {
+  padding: 52px 0 64px;
+  background: rgba(240, 242, 241, 0.87);
+  backdrop-filter: blur(3px);
+  color: var(--ink);
+}
+
+.menu-head {
+  text-align: center;
+}
+
+.menu-head .script {
+  color: var(--gold);
+  font-size: clamp(32px, 3.2vw, 42px);
+}
+
+.menu-head h2 {
+  margin-top: 2px;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(24px, 2.6vw, 32px);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.menu-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 90px;
+  row-gap: 32px;
+}
+
+.menu-grid li {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.menu-thumb {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--teal);
+}
+
+.menu-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.7);
+}
+
+.menu-copy {
+  display: block;
+  padding-top: 2px;
+}
+
+.menu-name {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.menu-note {
+  display: block;
+  margin-top: 6px;
+  font-size: 11.5px;
+  line-height: 1.65;
+  color: #697578;
+}
+
+.menu-price {
+  display: block;
+  margin-top: 7px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.booking {
+  background: var(--teal);
+  padding: 72px 0 80px;
+}
+
+.booking-script {
+  text-align: center;
+  color: #f3efe5;
+  font-size: clamp(32px, 3.4vw, 42px);
+}
+
+.booking-form {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px 38px;
+}
+
+.field > span {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 8.5px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.field input,
+.field select {
+  width: 100%;
+  height: 34px;
+  padding: 0 16px;
+  font-size: 12px;
+  color: #fff;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 999px;
+}
+
+.field input::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.field select {
+  padding-right: 34px;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' fill='none' stroke='rgba(255,255,255,0.7)' stroke-width='1.4'%3E%3Cpath d='M1 1l4 4 4-4'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+}
+
+.field select option {
+  color: var(--ink);
+}
+
+.booking-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.booking-actions button {
+  width: 220px;
+  height: 34px;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #fff;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.booking-actions button:hover {
+  background: rgba(176, 134, 63, 0.35);
+  border-color: var(--gold-soft);
+}
+
+.booking-status {
+  font-size: 12px;
+  text-align: center;
+  color: var(--gold-soft);
+}
+
+.footer {
+  padding: 70px 0;
+  background-image:
+    linear-gradient(rgba(20, 36, 40, 0.55), rgba(20, 36, 40, 0.7)),
+    url('./assets/hero-spices.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-inner {
+  text-align: center;
+}
+
+.footer .script {
+  color: var(--cream);
+  font-size: 34px;
+}
+
+.footer p {
+  margin-top: 12px;
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.footer .copyright {
+  margin-top: 16px;
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 980px) {
+  .flavour-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .flavour-photo {
+    max-width: 480px;
+    height: 260px;
+  }
+
+  .features-grid {
+    gap: 40px;
+  }
+
+  .plate-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .plate-grid img {
+    min-height: 220px;
+  }
+
+  .menu-grid {
+    column-gap: 50px;
+  }
+
+  .booking-form {
+    gap: 22px 24px;
+  }
+}
+
+@media (max-width: 700px) {
+  .shell {
+    padding: 0 22px;
+  }
+
+  .nav-inner {
+    height: 62px;
+  }
+
+  .brand {
+    font-size: 12px;
+  }
+
+  .nav-links {
+    gap: 14px;
+  }
+
+  .nav-links a {
+    font-size: 9.5px;
+    letter-spacing: 0.1em;
+  }
+
+  .hero {
+    min-height: 520px;
+    padding: 60px 0;
+  }
+
+  .hero-card {
+    padding: 40px 24px 46px;
+  }
+
+  .ring-a {
+    width: 200px;
+    height: 200px;
+    right: -90px;
+  }
+
+  .ring-b {
+    width: 250px;
+    height: 250px;
+    bottom: -140px;
+  }
+
+  .flavour {
+    padding: 60px 0;
+  }
+
+  .features {
+    padding: 56px 0;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .plate {
+    padding: 60px 0;
+  }
+
+  .plate-panel {
+    padding: 38px 22px 44px;
+  }
+
+  .plate-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .plate-grid img {
+    min-height: 240px;
+  }
+
+  .plate-note {
+    padding: 26px 20px;
+  }
+
+  .strip-links {
+    gap: 20px;
+  }
+
+  .menu {
+    padding: 60px 0;
+  }
+
+  .menu-panel {
+    padding: 38px 0 44px;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+    row-gap: 26px;
+  }
+
+  .booking-form {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .footer {
+    padding: 56px 0;
+  }
+}
