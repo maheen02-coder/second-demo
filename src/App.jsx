@@ -128,6 +128,8 @@ function App() {
               className="flavour-photo"
               src={spoonsImage}
               alt="Two wooden spoons holding peppercorns and chilli powder"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </section>
@@ -157,13 +159,23 @@ function App() {
               </header>
 
               <div className="plate-grid">
-                <img src={noodlesImage} alt="A dark bowl of spiced noodles" />
+                <img
+                  src={noodlesImage}
+                  alt="A dark bowl of spiced noodles"
+                  loading="lazy"
+                  decoding="async"
+                />
                 <div className="plate-note">
                   <h3>Menu category</h3>
                   <p>Small plates, thalis and slow-cooked curries, served from noon until late.</p>
                   <a href="#menu">Details</a>
                 </div>
-                <img src={yellowDishImage} alt="A golden bowl of curry with fresh herbs" />
+                <img
+                  src={yellowDishImage}
+                  alt="A golden bowl of curry with fresh herbs"
+                  loading="lazy"
+                  decoding="async"
+                />
                 <div className="plate-note">
                   <h3>Drink category</h3>
                   <p>House lassis, masala chai and infusions built around whole spice.</p>
@@ -206,7 +218,13 @@ function App() {
                 {menuItems.map((dish) => (
                   <li key={dish.name}>
                     <span className="menu-thumb">
-                      <img src={dish.image} alt="" style={{ objectPosition: dish.position }} />
+                      <img
+                        src={dish.image}
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                        style={{ objectPosition: dish.position }}
+                      />
                     </span>
                     <span className="menu-copy">
                       <span className="menu-name">{dish.name}</span>
